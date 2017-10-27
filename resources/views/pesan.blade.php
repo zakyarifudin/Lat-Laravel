@@ -86,6 +86,7 @@
 				<div>
 					<strong>Pesan</strong>
 					{!! Form::text('pesan',null,array('placeholder' => 'Tulis pesan','class' => 'form-control'))!!}
+					<button type="submit" class="btn btn-primary">Kirim</button>
 				</div>
 				{!! Form::close() !!}
 				<div class="links">
