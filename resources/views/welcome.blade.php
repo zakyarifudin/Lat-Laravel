@@ -86,6 +86,7 @@
 					<a href="/">Home</a>
                     <a href="about">Tentang</a>
                     <a href="pesan">Pesan</a>
+					<a href="template">Templating</a>
                 </div>
 				
              
