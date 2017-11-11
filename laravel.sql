@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 03, 2017 at 08:50 AM
+-- Generation Time: Nov 11, 2017 at 02:36 AM
 -- Server version: 5.6.25
 -- PHP Version: 5.6.11
 
@@ -35,7 +35,14 @@ CREATE TABLE IF NOT EXISTS `admins` (
   `remember_token` varchar(100) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
   `updated_at` timestamp NULL DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `admins`
+--
+
+INSERT INTO `admins` (`id`, `name`, `email`, `job_title`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
+(1, 'zaky', 'zakyarifudin@gmail.com', 'Staff', '$2y$10$QRk5I9JomWtDAeyLQqkjfucS3s/nQ5KYydkM.G.Oul0w0.JA/f6/a', NULL, '2017-11-10 18:06:33', '2017-11-10 18:06:33');
 
 -- --------------------------------------------------------
 
@@ -91,7 +98,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'zaky', 'zaky@gmail.com', '$2y$10$i6u2H7fvbHzoAPUhQMDHauIbYPUsaE3.cE3KmxYyTq/JUKz9BWyeS', 'pn3MyMYUIqW0SdwvBOMI0xNbTmYSOcCsnk0kgixK5LhQNMaxtFgEbKPV4eBA', '2017-11-03 00:40:39', '2017-11-03 00:40:39');
+(1, 'zaky', 'zaky@gmail.com', '$2y$10$i6u2H7fvbHzoAPUhQMDHauIbYPUsaE3.cE3KmxYyTq/JUKz9BWyeS', 'gzNERCHsqLheiSnWi1ztp61aEojxwR6FZaG544FsqGO5vuCRP4FDjYiuLImy', '2017-11-03 00:40:39', '2017-11-03 00:40:39');
 
 --
 -- Indexes for dumped tables
@@ -131,7 +138,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `admins`
 --
 ALTER TABLE `admins`
-  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) unsigned NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `migrations`
 --
